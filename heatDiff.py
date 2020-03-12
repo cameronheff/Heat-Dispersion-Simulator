@@ -1,6 +1,5 @@
 # FSUID cjh17h
 # Written by Cameron Heffelfinger on July 25th, 2019
-# Python Summer 2019 Homework 3
 # Program simulates heat distribution using a 2d matrix and plotting to a graph
 # using pyplot
 
@@ -9,13 +8,6 @@ import numpy as np
 import matplotlib.pyplot as mp
 
 '''
-NOTES: Does Halo cells mean an outer-lining surrounding the array with values of
-zero that essentially drain some of the heat (value) from neighboring cells, but
-doesn't hold that heat? As in, drains some of the heat, but is still set at zero always
-I believe it means there is the extra outerlining, and only the column to the leftmost
-in this outerlining is set to starting temp PERMANENTLY, not the actual cells inside
-the actual 2D array being plotted
-
 Temperature Formula
 temp[i,j]= 1/4(oldTemp[i−1,j]+oldTemp[i+1,j]+oldTemp[i,j−1]+oldTemp[i,j+1])
 '''
